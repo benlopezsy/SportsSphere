@@ -42,19 +42,75 @@ main {
     margin-top: 10px;
 }
 
-.lines {
-    width: 100%;
-    margin-top: 20px;
 
+
+.mini-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%
 }
 
 
-
 .mini-nav a {
-    display: flex;
-    flex-direction: row;
     text-decoration: none;
     color: #333;
     margin-top: 10px;
     margin-right: 10px;
 }
+
+.mini-nav a:hover{
+    color: orange;
+}
+
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+    margin:20px;
+
+}
+
+.news-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+    margin:20px;
+   
+}
+
+.new-card{
+    border: 1px solid black;
+
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px; /* Fixed height for image */
+    object-fit: cover;
+}
+
+.table-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nfl-results{
+    width: 100%;
+  
+    
+    
+}
+
+.score{
+    background-color: red;
+    color: #fff;
+    text-align: center;
+   padding: 5px;
+}
+
+
